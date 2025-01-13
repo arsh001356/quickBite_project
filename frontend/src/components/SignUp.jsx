@@ -18,7 +18,7 @@ const Signup = () => {
             password: passwordRef.current.value,
         };
         // console.log("Form submitted:", formData);
-        await axios.post("http://localhost:5000/user/signup", formData)
+        await axios.post("https://quickbite-4ynl.onrender.com/user/signup", formData)
             .then((res) => {
                 console.log(res.data)
                 if (res.data) {
