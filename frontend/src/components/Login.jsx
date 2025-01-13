@@ -17,7 +17,7 @@ const Login = () => {
             password: passwordRef.current.value,
         };
 
-        await axios.post("http://localhost:5000/user/login", formData)
+        await axios.post("https://quickbite-4ynl.onrender.com/user/login", formData)
             .then((res) => {
                 console.log(res.data)
                 if (res.data) {
